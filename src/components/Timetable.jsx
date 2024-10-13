@@ -1,26 +1,39 @@
+function stringToTime(date) {
+  return new Date(date).toLocaleTimeString("pt-BR", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
+function stringToWeekday(date) {
+  return new Date(date).toLocaleDateString("pt-BR", {
+    weekday: "long",
+  });
+}
+
 const Card = ({ course }) => {
-  const { type, title, location, participants } = course;
-  const courseFullDate = new Date(course.start);
-  const startTime = courseFullDate.toTimeString().slice(0, 5);
-  const endTime = courseFullDate.toTimeString().slice(0, 5);
+  const { title, type, location, participants, start, end } = course;
+  const timerange = stringToTime(start) + " - " + stringToTime(end);
+  const people = participants.join(", ");
+  const day = stringToWeekday(start);
 
   return (
-    <div className=" bg-emerald-100 p-2 border-emerald-400 border-2 shadow">
-      <p className="w-min text-emerald-950 lowercase text-sm">{type}</p>
-      <p className="text-emerald-800 capitalize text-lg">{title}</p>
-      {participants.map((participant, index) => {
-        return (
-          <p key={index} className="text-emerald-800 capitalize text-sm">
-            {participant}
-          </p>
-        );
-      })}
-      <div className="flex justify-between flex-row">
-        <div className="flex gap-2 flex-row">
-          <p className="text-emerald-800 capitalize text-sm">{startTime}</p>
-          <p className="text-emerald-800 capitalize text-sm">{endTime}</p>
+    <div className="grid h-48 sm:h-56 bg-emerald-100 dark:bg-emerald-800  dark:border-emerald-950 text-emerald-800 dark:text-emerald-100 border-emerald-300  shadow-emerald-200 dark:shadow-emerald-950 border-2 gap-3 uppercase shadow-md text-sm">
+      <div className="flex flex-col">
+        <div className="bg-emerald-300 dark:bg-emerald-950 p-1">
+          <p className="text-base text-center">{title}</p>
         </div>
-        <p className="text-emerald-800 capitalize text-sm">{location}</p>
+        <div className="flex flex-row justify-evenly bg-emerald-200 p-1 dark:bg-emerald-900">
+          <p>{location}</p>
+          <p>{day}</p>
+          <p>{timerange}</p>
+        </div>
+      </div>
+      <div className="capitalize px-4 text-center">
+        <p>{people}</p>
+      </div>
+      <div className="px-4 py-2 text-end">
+        <p>{type}</p>
       </div>
     </div>
   );
@@ -32,7 +45,9 @@ const Timetable = ({ courses }) => {
   });
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">{cards}</div>
+    <div className="grid h-full grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      {cards}
+    </div>
   );
 };
 
