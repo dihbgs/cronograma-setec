@@ -15,8 +15,6 @@ function Setup() {
 function App() {
   Setup();
 
-  console.log(courses);
-
   return (
     <>
       <Header />
