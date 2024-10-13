@@ -7,9 +7,15 @@ function Setup() {
   const { body } = document;
   const root = document.getElementById("root");
 
-  body.classList.add("bg-emerald-50", "flex", "flex-col", "h-screen");
+  body.classList.add(
+    "flex",
+    "flex-col",
+    "bg-emerald-50",
+    "dark:bg-emerald-900",
+    "min-h-screen"
+  );
 
-  root.classList.add("flex", "flex-col", "h-full");
+  root.classList.add("flex", "flex-col", "min-h-screen");
 }
 
 function App() {
