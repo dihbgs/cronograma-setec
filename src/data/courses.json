@@ -1,80 +1,661 @@
 [
   {
-    "category": "Geral",
+    "category": "geral",
     "type": "Competição",
     "title": "Competição de Instalações Elétricas",
-    "start": "2024-10-14T09:10:00",
-    "end": "2024-10-14T12:00:00",
+    "start": "2024-10-15T09:10:00",
+    "end": "2024-10-15T12:00:00",
     "location": "Anfiteatro",
-    "participants": [
-      "Dra. Raquel Dalla Costa da Rocha",
-      "Dr. Rodrigo Brackmann",
-      "Dr. Aruanã Antonio dos Passos"
+    "speakers": [
+      "Dr. Kleiton de Morais Sousa",
+      "Dr. Ósis Eduardo Silva Leal",
+      "Centro Acadêmico de Engenharia Elétrica"
     ]
   },
   {
-    "category": "Geral",
-    "type": "Competição",
-    "title": "Competição de Instalações Elétricas",
-    "start": "2024-10-14T09:10:00",
-    "end": "2024-10-14T12:00:00",
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Perícia Criminal - Atuação da Polícia Científica no Estado do Paraná",
+    "start": "2024-10-16T08:20:00",
+    "end": "2024-10-16T10:00:00",
     "location": "Anfiteatro",
-    "participants": [
-      "Dra. Raquel Dalla Costa da Rocha",
-      "Dr. Rodrigo Brackmann",
-      "Dr. Aruanã Antonio dos Passos"
+    "speakers": [
+      "Dra. Adriana Martins Godin",
+      "Perito Paullus Tarsis Pinheiro da Rocha Cordeiro"
     ]
   },
   {
-    "category": "Geral",
-    "type": "Competição",
-    "title": "Competição de Instalações Elétricas",
-    "start": "2024-10-14T09:10:00",
-    "end": "2024-10-14T12:00:00",
+    "category": "química",
+    "type": "Minipalestra",
+    "title": "Sistema de gestão da segurança dos alimentos: Análise de Perigos e Pontos Críticos de Controle (APPCC)",
+    "start": "2024-10-14T15:30:00",
+    "end": "2024-10-14T16:30:00",
+    "location": "Miniauditório",
+    "speakers": ["Dra. Simone Beux"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Minicurso de SolidWorks",
+    "start": "2024-10-16T15:50:00",
+    "end": "2024-10-16T17:30:00",
+    "location": "Sala Q002",
+    "speakers": ["H7 (Empresa Júnior de Engenharia Mecânica)"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Minicurso de SolidWorks",
+    "start": "2024-10-15T15:50:00",
+    "end": "2024-10-15T17:30:00",
+    "location": "Sala Q002",
+    "speakers": ["H7 (Empresa Júnior de Engenharia Mecânica)"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "WEG- Caminhos Profissionais em Engenharia: Oportunidades na WEG e no Mercado de Trabalho",
+    "start": "2024-10-16T10:20:00",
+    "end": "2024-10-16T12:00:00",
     "location": "Anfiteatro",
-    "participants": [
-      "Dra. Raquel Dalla Costa da Rocha",
-      "Dr. Rodrigo Brackmann",
-      "Dr. Aruanã Antonio dos Passos"
+    "speakers": ["Michel Simon"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "WEG - Eficiência Energética em Aplicação de Motores Elétricos",
+    "start": "2024-10-16T13:50:00",
+    "end": "2024-10-16T15:30:00",
+    "location": "Anfiteatro",
+    "speakers": ["Eng. Marcio Heron Vogt"]
+  },
+  {
+    "category": "química",
+    "type": "Minicurso",
+    "title": "Cosméticos Naturais a Base de Produtos das Abelhas",
+    "start": "2024-10-16T15:00:00",
+    "end": "2024-10-16T17:00:00",
+    "location": "Laboratório de Química",
+    "speakers": ["Dra. Silvana Damin"]
+  },
+  {
+    "category": "química",
+    "type": "Palestra",
+    "title": "CRQ- Conselho Regional de Química: Overview do órgão fiscalizador",
+    "start": "2024-10-17T13:30:00",
+    "end": "2024-10-17T15:30:00",
+    "location": "Miniauditório",
+    "speakers": ["Bel. Guilherme Lustosa dos Santos"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Inteligência Artificial na Indústria",
+    "start": "2024-10-17T18:40:00",
+    "end": "2024-10-17T20:20:00",
+    "location": "Anfiteatro",
+    "speakers": ["Me. Bruna Machado Mulinari"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Desafios Contemporâneos Para Equidade e Diversidade de Gênero na Ciência e Sociedade",
+    "start": "2024-10-14T08:20:00",
+    "end": "2024-10-14T10:00:00",
+    "location": "Anfiteatro",
+    "speakers": ["Dra. Márcia Foster Mesko"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Avanços em Métodos Analíticos Verdes para Determinação de Elementos Tóxicos em Amostras Diversas",
+    "start": "2024-10-14T14:00:00",
+    "end": "2024-10-14T15:00:00",
+    "location": "Anfiteatro",
+    "speakers": ["Dra. Márcia Foster Mesko"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Produtos do Setor Aeronáutico",
+    "start": "2024-10-14T15:50:00",
+    "end": "2024-10-14T17:30:00",
+    "location": "Anfiteatro",
+    "speakers": ["Felipe Frizon"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Case Indústria 4.0 - Coorpertradição",
+    "start": "2024-10-14T19:30:00",
+    "end": "2024-10-14T22:00:00",
+    "location": "Anfiteatro",
+    "speakers": [
+      "João Paulo Cardoso",
+      "Rômulo Fogli Minetto",
+      "Guilherme Rodrigues Neves"
     ]
   },
   {
-    "category": "Geral",
-    "type": "Competição",
-    "title": "Competição de Instalações Elétricas",
-    "start": "2024-10-14T09:10:00",
-    "end": "2024-10-14T12:00:00",
+    "category": "geral",
+    "type": "Minipalestra",
+    "title": "Mapeamentos e Inundações: Melhorando a Governança no RS com as Lições de Maio de 2024",
+    "start": "2024-10-14T19:30:00",
+    "end": "2024-10-14T22:00:00",
+    "location": "Miniauditório",
+    "speakers": ["Dra. Diuliana Leandro"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Ciência em Transformação: O Futuro já começou!",
+    "start": "2024-10-15T13:50:00",
+    "end": "2024-10-15T15:30:00",
     "location": "Anfiteatro",
-    "participants": [
-      "Dra. Raquel Dalla Costa da Rocha",
-      "Dr. Rodrigo Brackmann",
-      "Dr. Aruanã Antonio dos Passos"
+    "speakers": ["Dr. Evaldo Ferreira Vilela"]
+  },
+  {
+    "category": "geral",
+    "type": "Apresentação de Trabalho",
+    "title": "Apresentação de Resumos Científicos",
+    "start": "2024-10-15T15:00:00",
+    "end": "2024-10-15T18:00:00",
+    "location": "Hall blocos M e N",
+    "speakers": [
+      "Dra. Tatiane Luiza Cadorin Oldoni",
+      "Dra. Taciane Finatto",
+      "Dra. Sirlei Dias Teixeira",
+      "Dr. Edimir Andrade Pereira",
+      "Dr. Marcelo Sandrini",
+      "Dr. Kleiton de Morais Sousa",
+      "Dr. Cesar Augusto Medeiros Destro"
     ]
   },
   {
-    "category": "Geral",
-    "type": "Competição",
-    "title": "Competição de Instalações Elétricas",
-    "start": "2024-10-14T09:10:00",
-    "end": "2024-10-14T12:00:00",
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Por trás de todo profissional de excelência existem comportamentos de excelência",
+    "start": "2024-10-15T19:30:00",
+    "end": "2024-10-15T22:10:00",
     "location": "Anfiteatro",
-    "participants": [
-      "Dra. Raquel Dalla Costa da Rocha",
-      "Dr. Rodrigo Brackmann",
-      "Dr. Aruanã Antonio dos Passos"
+    "speakers": ["Ricardo Friedemann"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "História da Engenharia - Turim",
+    "start": "2024-10-16T08:20:00",
+    "end": "2024-10-16T12:00:00",
+    "location": "Turim",
+    "speakers": [
+      "Centro Acadêmico de Engenharia Mecânica",
+      "Eng. Junior Fracassoli (Turim)",
+      ""
     ]
   },
   {
-    "category": "Geral",
-    "type": "Competição",
-    "title": "Competição de Instalações Elétricas",
-    "start": "2024-10-14T09:10:00",
-    "end": "2024-10-14T12:00:00",
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Prati-Donaduzzi",
+    "start": "2024-10-16T14:00:00",
+    "end": "2024-10-16T15:00:00",
+    "location": "Miniauditório",
+    "speakers": ["Cláudia Regina Comin"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "HENKEL-LOCTITE - Treinamento de tecnologia em adesivos",
+    "start": "2024-10-16T18:40:00",
+    "end": "2024-10-16T20:20:00",
+    "location": "Parque de Exposições [auditório]",
+    "speakers": ["Renan José Corso"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Palestra de Segurança Cybernética",
+    "start": "2024-10-16T18:40:00",
+    "end": "2024-10-16T21:10:00",
     "location": "Anfiteatro",
-    "participants": [
-      "Dra. Raquel Dalla Costa da Rocha",
-      "Dr. Rodrigo Brackmann",
-      "Dr. Aruanã Antonio dos Passos"
+    "speakers": ["Hellen Caroline de Castro Ishida"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Sensorville - Introdução a sensoriamento e aplicações na automação industrial",
+    "start": "2024-10-16T20:20:00",
+    "end": "2024-10-16T23:00:00",
+    "location": "Parque de Exposições [auditório]",
+    "speakers": ["Gustavo Santos Fausto"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "CREA-PR: Atribuições Profissionais Para os Cursos diurnos.",
+    "start": "2024-10-17T13:30:00",
+    "end": "2024-10-17T15:30:00",
+    "location": "Anfiteatro",
+    "speakers": ["Eng. Clodomir Ascari", "Eng. Diogo Artur Tocacelli Colella"]
+  },
+  {
+    "category": "geral",
+    "type": "Atividade Esportiva",
+    "title": "Atividades Esportivas",
+    "start": "2024-10-17T15:50:00",
+    "end": "2024-10-17T17:30:00",
+    "location": "Ginásio de Esportes",
+    "speakers": ["CA QUÍMICA", "ATLÉTICA QUÍMICA"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "CREA-PR: Atribuições Profissionais Para os Cursos Noturnos",
+    "start": "2024-10-17T20:20:00",
+    "end": "2024-10-17T23:00:00",
+    "location": "Anfiteatro",
+    "speakers": ["Eng. Clodomir Ascari", "Eng. Diogo Artur Tocacelli Colella"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Sistemas de armazenamento de energia e fronteiras da transição energética",
+    "start": "2024-10-18T10:20:00",
+    "end": "2024-10-18T12:00:00",
+    "location": "Anfiteatro",
+    "speakers": ["Dr. João Marcos Kanieski"]
+  },
+  {
+    "category": "geral",
+    "type": "Competição",
+    "title": "Prêmio Kirchhoff de Análise de Circuitos",
+    "start": "2024-10-18T13:00:00",
+    "end": "2024-10-18T15:30:00",
+    "location": "Anfiteatro",
+    "speakers": ["Dr. Jorge Luis Roel Ortiz"]
+  },
+  {
+    "category": "geral",
+    "type": "Festival",
+    "title": "Festival de Música IntegraSom",
+    "start": "2024-10-18T18:40:00",
+    "end": "2024-10-18T22:00:00",
+    "location": "Hall blocos M e N",
+    "speakers": [
+      "Dr. Johnny Werner",
+      "Dr. Everton Luiz de Aguiar",
+      "Dr. Giovanni Bratti"
     ]
+  },
+  {
+    "category": "geral",
+    "type": "Mesa-redonda",
+    "title": "Mesa redonda: empresas de agrimensura",
+    "start": "2024-10-18T18:40:00",
+    "end": "2024-10-18T23:00:00",
+    "location": "Anfiteatro",
+    "speakers": ["Empresários da área"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Projeto e Confecção de Placas de Circuito Impresso",
+    "start": "2024-10-14T13:00:00",
+    "end": "2024-10-14T15:30:00",
+    "location": "Sala I010",
+    "speakers": ["Me. Célio Degaraes"]
+  },
+  {
+    "category": "computação",
+    "type": "Minicurso",
+    "title": "Power BI para a Vida",
+    "start": "2024-10-14T13:50:00",
+    "end": "2024-10-14T17:30:00",
+    "location": "Sala V105",
+    "speakers": ["Douglas Felix"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Mecânica Básica",
+    "start": "2024-10-14T13:50:00",
+    "end": "2024-10-14T17:30:00",
+    "location": "Bloco H",
+    "speakers": ["UTech"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Oficina",
+    "title": "Oficina de Conversores Estáticos para Veículos Elétricos",
+    "start": "2024-10-14T15:50:00",
+    "end": "2024-10-14T17:30:00",
+    "location": "Sala I001",
+    "speakers": ["Dr. César Rafael Claure Torrico"]
+  },
+  {
+    "category": "geral",
+    "type": "Minicurso",
+    "title": "Oficina de Eletrônica Básica",
+    "start": "2024-10-14T15:50:00",
+    "end": "2024-10-14T17:30:00",
+    "location": "Sala I009",
+    "speakers": ["Dr. Everton Luiz de Aguiar"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "Investindo no futuro: Carreira e Produtos de Investimentos",
+    "start": "2024-10-15T08:20:00",
+    "end": "2024-10-15T10:00:00",
+    "location": "Sala de Treinamentos",
+    "speakers": ["Larissa Gass"]
+  },
+  {
+    "category": "mecânica, elétrica",
+    "type": "Minicurso",
+    "title": "Matlab e Ansys",
+    "start": "2024-10-15T08:20:00",
+    "end": "2024-10-15T17:30:00",
+    "location": "Sala Q001",
+    "speakers": [
+      "Prof. Dr. PAULO ROGERIO NOVAK",
+      "Prof. Dr. FABIO JUNKES CORREA"
+    ]
+  },
+  {
+    "category": "química",
+    "type": "Minicurso",
+    "title": "Produção de Cerveja Artesanal",
+    "start": "2024-10-15T08:20:00",
+    "end": "2024-10-15T12:00:00",
+    "location": "Bloco N",
+    "speakers": ["Me. Everton Pizato"]
+  },
+  {
+    "category": "química",
+    "type": "Minicurso",
+    "title": "Produção de Cerveja Artesanal",
+    "start": "2024-10-15T13:00:00",
+    "end": "2024-10-15T15:30:00",
+    "location": "Bloco N",
+    "speakers": ["Me. Everton Pizato"]
+  },
+  {
+    "category": "computação",
+    "type": "Minicurso",
+    "title": "Minicurso de Programação de Jogos",
+    "start": "2024-10-15T10:20:00",
+    "end": "2024-10-15T12:00:00",
+    "location": "Sala V105",
+    "speakers": ["Matheus Marochi Olenik"]
+  },
+  {
+    "category": "computação",
+    "type": "Minicurso",
+    "title": "Minicurso de Programação de Jogos",
+    "start": "2024-10-17T10:20:00",
+    "end": "2024-10-17T12:00:00",
+    "location": "Sala V105",
+    "speakers": ["Matheus Marochi Olenik"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Inteligência Artificial Aplicada a Microcontroladores",
+    "start": "2024-10-15T13:00:00",
+    "end": "2024-10-15T15:30:00",
+    "location": "Sala I008",
+    "speakers": ["Dr. Jonatas Policarpo Américo"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Turma A - Minicurso de montagem e desmontagem de motores",
+    "start": "2024-10-15T13:00:00",
+    "end": "2024-10-15T17:30:00",
+    "location": "Retibra",
+    "speakers": ["Retibra"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Turma A - Minicurso de montagem e desmontagem de motores",
+    "start": "2024-10-16T13:00:00",
+    "end": "2024-10-16T17:30:00",
+    "location": "Retibra",
+    "speakers": ["Retibra"]
+  },
+  {
+    "category": "computação",
+    "type": "Minicurso",
+    "title": "Arduino: controlando motor CC",
+    "start": "2024-10-15T13:50:00",
+    "end": "2024-10-15T17:30:00",
+    "location": "Sala V009",
+    "speakers": ["Profa. Dra. Kathya Linhares"]
+  },
+  {
+    "category": "computação",
+    "type": "Minicurso",
+    "title": "Minicurso de Arduino - PatoBots",
+    "start": "2024-10-15T13:50:00",
+    "end": "2024-10-15T15:30:00",
+    "location": "Sala V109",
+    "speakers": ["PatoBots"]
+  },
+  {
+    "category": "computação",
+    "type": "Palestra",
+    "title": "Magic Drone Show - Leve luz por onde passar",
+    "start": "2024-10-15T15:50:00",
+    "end": "2024-10-15T17:30:00",
+    "location": "Sala M003",
+    "speakers": ["Kadu Andrade", "Wellington de Oliveira"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Elementos Finitos",
+    "start": "2024-10-18T15:50:00",
+    "end": "2024-10-18T17:30:00",
+    "location": "Bloco V",
+    "speakers": ["Dr. José Fábio Kolzer", "Dr. Jorge Luis Roel Ortiz"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Elementos Finitos",
+    "start": "2024-10-15T15:50:00",
+    "end": "2024-10-15T17:30:00",
+    "location": "Bloco V",
+    "speakers": ["Dr. José Fábio Kolzer", "Dr. Jorge Luis Roel Ortiz"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Python para Engenharia",
+    "start": "2024-10-18T15:50:00",
+    "end": "2024-10-18T17:30:00",
+    "location": "Sala I003",
+    "speakers": ["Me. André Macário Barros"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Python para Engenharia",
+    "start": "2024-10-15T15:50:00",
+    "end": "2024-10-15T17:30:00",
+    "location": "Sala I003",
+    "speakers": ["Me. André Macário Barros"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Mini-Curso de Injeção Eletrônica",
+    "start": "2024-10-15T19:30:00",
+    "end": "2024-10-15T23:00:00",
+    "location": "Bloco H",
+    "speakers": ["UTech"]
+  },
+  {
+    "category": "mecânica, elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Machine Learning",
+    "start": "2024-10-16T08:20:00",
+    "end": "2024-10-16T12:00:00",
+    "location": "Sala Q001",
+    "speakers": ["Dr. Gilson Adamczuk Oliveira"]
+  },
+  {
+    "category": "computação",
+    "type": "Minicurso",
+    "title": "Arduino: controlando motor CC",
+    "start": "2024-10-16T13:50:00",
+    "end": "2024-10-16T17:30:00",
+    "location": "Sala V009",
+    "speakers": ["Profa. Dra. Kathya Linhares"]
+  },
+  {
+    "category": "computação",
+    "type": "Palestra",
+    "title": "Vantagem dos Drones de pulverização na agricultura e sua história.",
+    "start": "2024-10-16T15:50:00",
+    "end": "2024-10-16T17:30:00",
+    "location": "Sala M003",
+    "speakers": ["Farming Solutions - Anderson Morri Menegon"]
+  },
+  {
+    "category": "geral",
+    "type": "Palestra",
+    "title": "WEG - Infraestrutura de Recarga para Veículos Elétricos",
+    "start": "2024-10-16T15:50:00",
+    "end": "2024-10-16T17:30:00",
+    "location": "Miniauditório",
+    "speakers": ["Eng. Rafael Barbosa Sandoval Prado"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Curso",
+    "title": "Curso de Áudio com Abordagem em Acústica e Eletrônica",
+    "start": "2024-10-17T15:50:00",
+    "end": "2024-10-17T17:30:00",
+    "location": "Sala I010",
+    "speakers": [
+      "Dr. Johnny Werner",
+      "Dr. Everton Luiz de Aguiar",
+      "Dr. Giovanni Bratti"
+    ]
+  },
+  {
+    "category": "elétrica",
+    "type": "Curso",
+    "title": "Curso de Áudio com Abordagem em Acústica e Eletrônica",
+    "start": "2024-10-16T18:40:00",
+    "end": "2024-10-16T20:20:00",
+    "location": "Bloco H",
+    "speakers": [
+      "Dr. Johnny Werner",
+      "Dr. Everton Luiz de Aguiar",
+      "Dr. Giovanni Bratti"
+    ]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minicurso",
+    "title": "Minicurso de Automação Industrial",
+    "start": "2024-10-16T20:20:00",
+    "end": "2024-10-16T23:00:00",
+    "location": "Sala I005",
+    "speakers": ["Dr. Ricardo Bernardi"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minipalestra",
+    "title": "Minipalestra de Eletromiografia",
+    "start": "2024-10-17T08:20:00",
+    "end": "2024-10-17T10:00:00",
+    "location": "Miniauditório",
+    "speakers": ["Dr. Daniel Campos"]
+  },
+  {
+    "category": "geral",
+    "type": "Oficina",
+    "title": "Oficina de Liderança e Trabalho em Equipe",
+    "start": "2024-10-17T08:20:00",
+    "end": "2024-10-17T10:00:00",
+    "location": "Sala de Treinamentos",
+    "speakers": ["Dr Luciano Minghini"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Usinagem.",
+    "start": "2024-10-17T08:20:00",
+    "end": "2024-10-17T12:00:00",
+    "location": "Sala H006",
+    "speakers": ["Equipe Pato a Jato"]
+  },
+  {
+    "category": "elétrica",
+    "type": "Minipalestra",
+    "title": "Minipalestra \"Atuação do Engenheiro Eletricista no mercado de Energias Renováveis\"",
+    "start": "2024-10-17T10:20:00",
+    "end": "2024-10-17T12:00:00",
+    "location": "Miniauditório",
+    "speakers": ["Eng. Daniel Scopel"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Turma B - Minicurso de montagem e desmontagem de motores",
+    "start": "2024-10-17T13:00:00",
+    "end": "2024-10-17T17:30:00",
+    "location": "Retibra",
+    "speakers": ["Retibra"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Turma B - Minicurso de montagem e desmontagem de motores",
+    "start": "2024-10-18T13:00:00",
+    "end": "2024-10-18T17:30:00",
+    "location": "Retibra",
+    "speakers": ["Retibra"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Laminação",
+    "start": "2024-10-18T08:20:00",
+    "end": "2024-10-18T12:00:00",
+    "location": "Área das Equipes",
+    "speakers": ["Pato a Jato"]
+  },
+  {
+    "category": "química",
+    "type": "Minicurso",
+    "title": "Desenvolvimento de Molhos Industriais: Maionese, Mostarda e Catchup",
+    "start": "2024-10-18T14:00:00",
+    "end": "2024-10-18T15:00:00",
+    "location": "Laboratório de Química",
+    "speakers": ["Me. Maria Fernanda Ribas"]
+  },
+  {
+    "category": "química",
+    "type": "Minicurso",
+    "title": "Inoculação de Cogumelos",
+    "start": "2024-10-18T14:00:00",
+    "end": "2024-10-18T16:00:00",
+    "location": "Laboratório de Química",
+    "speakers": ["Me. Celso Ferraz Bett"]
+  },
+  {
+    "category": "mecânica",
+    "type": "Minicurso",
+    "title": "Visita técnica na empresa RetiPato",
+    "start": "2024-10-18T15:30:00",
+    "end": "2024-10-18T17:30:00",
+    "location": "Retipato",
+    "speakers": ["RetiPato"]
   }
 ]
