@@ -23,7 +23,7 @@ const Card = ({ course }) => {
         <div className="bg-emerald-300 dark:bg-emerald-950 p-0 line-clamp-1 hover:line-clamp-4">
           <p className="text-sm text-center">{title}</p>
         </div>
-        <div className="flex flex-row justify-evenly bg-emerald-200 p-1 dark:bg-emerald-900">
+        <div className="flex flex-row justify-evenly px-2 py-1 text-xs bg-emerald-200 dark:bg-emerald-900">
           <p>{location}</p>
           <p>{day}</p>
           <p>{timerange}</p>
