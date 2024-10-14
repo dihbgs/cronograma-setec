@@ -43,7 +43,7 @@ function filterByAll(courses, category, type, search) {
     const courseCategory = course.category.toLowerCase();
 
     return (
-      (courseCategory === category || category === "all" || course) &&
+      (courseCategory === category || category === "all") &&
       (courseType === type || type === "all")
     );
   });
