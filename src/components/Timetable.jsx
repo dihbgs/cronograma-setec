@@ -53,9 +53,16 @@ function isCourseOutdated(course) {
   return new Date(course.end) < new Date();
 }
 
+function isCourseHappeningNow(course) {
+  return (
+    new Date(course.start) < new Date() && new Date(course.end) > new Date()
+  );
+}
+
 const Card = ({ course }) => {
   const { title, type, location, speakers, start, end } = course;
   const timerange = stringToTime(start) + " - " + stringToTime(end);
+  const isHappeningNow = isCourseHappeningNow(course);
   const isOutdated = isCourseOutdated(course);
   const people = speakers.join(", ");
   const day = stringToWeekday(start);
@@ -63,10 +70,17 @@ const Card = ({ course }) => {
   return (
     <div
       className={
-        "grid h-48 sm:h-56 bg-emerald-100 dark:bg-emerald-800  dark:border-emerald-950 text-emerald-800 dark:text-emerald-100 border-emerald-300  shadow-emerald-200 dark:shadow-emerald-950 border-2 gap-3 uppercase shadow-md text-sm active:hover:animate-wiggle cursor-pointer " +
-        (isOutdated ? "grayscale" : "")
+        "grid h-48 sm:h-56 bg-emerald-100 dark:bg-emerald-800  dark:border-emerald-950 text-emerald-800 dark:text-emerald-100 border-emerald-300  shadow-emerald-200 dark:shadow-emerald-950 border-2 gap-3 uppercase shadow-md text-sm active:hover:animate-wiggle cursor-pointer relative" +
+        (isOutdated ? " grayscale" : "") +
+        (isHappeningNow ? " animate-pulse" : "")
       }
     >
+      {isHappeningNow && (
+        <>
+          <div className="absolute -top-2 -right-2 bg-green-500 w-4 h-4 border-full rounded-full animate-ping"></div>
+          <div className="absolute -top-2 -right-2 bg-green-500 w-4 h-4 border-full rounded-full"></div>
+        </>
+      )}
       <div className="flex flex-col">
         <div className="bg-emerald-300 dark:bg-emerald-950 p-0 line-clamp-1 hover:line-clamp-4">
           <p className="text-sm text-center">{title}</p>
