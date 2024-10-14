@@ -18,10 +18,10 @@ const Card = ({ course }) => {
   const day = stringToWeekday(start);
 
   return (
-    <div className="grid h-48 sm:h-56 bg-emerald-100 dark:bg-emerald-800  dark:border-emerald-950 text-emerald-800 dark:text-emerald-100 border-emerald-300  shadow-emerald-200 dark:shadow-emerald-950 border-2 gap-3 uppercase shadow-md text-sm active:hover:animate-wiggle">
+    <div className="grid h-48 sm:h-56 bg-emerald-100 dark:bg-emerald-800  dark:border-emerald-950 text-emerald-800 dark:text-emerald-100 border-emerald-300  shadow-emerald-200 dark:shadow-emerald-950 border-2 gap-3 uppercase shadow-md text-sm active:hover:animate-wiggle cursor-pointer">
       <div className="flex flex-col">
-        <div className="bg-emerald-300 dark:bg-emerald-950 p-1 line-clamp-1 hover:line-clamp-4">
-          <p className="text-base text-center">{title}</p>
+        <div className="bg-emerald-300 dark:bg-emerald-950 p-0 line-clamp-1 hover:line-clamp-4">
+          <p className="text-sm text-center">{title}</p>
         </div>
         <div className="flex flex-row justify-evenly bg-emerald-200 p-1 dark:bg-emerald-900">
           <p>{location}</p>
