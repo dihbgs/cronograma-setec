@@ -13,14 +13,60 @@ function stringToWeekday(date) {
   });
 }
 
+function sortByDate(courses) {
+  return courses.sort((a, b) => {
+    return new Date(a.start) - new Date(b.start);
+  });
+}
+
+function filterBySearch(courses, search) {
+  return courses.filter((course) => {
+    const searchPool =
+      course.title.toLowerCase() +
+      course.speakers.join(" ").toLowerCase() +
+      course.location.toLowerCase() +
+      course.type.toLowerCase() +
+      course.category.toLowerCase() +
+      course.start.toLowerCase() +
+      course.end.toLowerCase() +
+      stringToWeekday(course.start).toLowerCase();
+
+    return searchPool.includes(search.toLowerCase());
+  });
+}
+
+function filterByAll(courses, category, type, search) {
+  const filteredBySearch = filterBySearch(courses, search);
+
+  return filteredBySearch.filter((course) => {
+    const courseType = course.type.toLowerCase();
+    const courseCategory = course.category.toLowerCase();
+
+    return (
+      (courseCategory === category || category === "all" || course) &&
+      (courseType === type || type === "all")
+    );
+  });
+}
+
+function isCourseOutdated(course) {
+  return new Date(course.end) < new Date();
+}
+
 const Card = ({ course }) => {
   const { title, type, location, speakers, start, end } = course;
   const timerange = stringToTime(start) + " - " + stringToTime(end);
+  const isOutdated = isCourseOutdated(course);
   const people = speakers.join(", ");
   const day = stringToWeekday(start);
 
   return (
-    <div className="grid h-48 sm:h-56 bg-emerald-100 dark:bg-emerald-800  dark:border-emerald-950 text-emerald-800 dark:text-emerald-100 border-emerald-300  shadow-emerald-200 dark:shadow-emerald-950 border-2 gap-3 uppercase shadow-md text-sm active:hover:animate-wiggle cursor-pointer">
+    <div
+      className={
+        "grid h-48 sm:h-56 bg-emerald-100 dark:bg-emerald-800  dark:border-emerald-950 text-emerald-800 dark:text-emerald-100 border-emerald-300  shadow-emerald-200 dark:shadow-emerald-950 border-2 gap-3 uppercase shadow-md text-sm active:hover:animate-wiggle cursor-pointer " +
+        (isOutdated ? "grayscale" : "")
+      }
+    >
       <div className="flex flex-col">
         <div className="bg-emerald-300 dark:bg-emerald-950 p-0 line-clamp-1 hover:line-clamp-4">
           <p className="text-sm text-center">{title}</p>
@@ -43,9 +89,9 @@ const Card = ({ course }) => {
 
 const SearchBar = ({ setSearch }) => {
   return (
-    <div className="flex flex-row justify-center w-full">
+    <div className="flex flex-row justify-center w-full active:hover:animate-wiggle">
       <input
-        className="border-2 border-emerald-300 dark:border-emerald-950 dark:text-emerald-50 dark:bg-emerald-950 outline-none bg-emerald-50 text-emerald-800 px-2"
+        className="flex w-full border-2 border-emerald-300 dark:border-emerald-950 dark:text-emerald-50 dark:bg-emerald-950 outline-none bg-emerald-50 text-emerald-800 px-2"
         type="text"
         placeholder="Pesquise aqui"
         onChange={(e) => setSearch(e.target.value)}
@@ -54,8 +100,7 @@ const SearchBar = ({ setSearch }) => {
   );
 };
 
-const CoursesDropdown = ({ courses, setFilteredCourses }) => {
-  const types = courses.map((course) => course.type.toLowerCase());
+const CoursesDropdown = ({ types, setType }) => {
   const options = [...new Set(types)].map((type, index) => {
     return (
       <option key={index} value={type}>
@@ -65,55 +110,67 @@ const CoursesDropdown = ({ courses, setFilteredCourses }) => {
   });
 
   return (
-    <div className="flex flex-row justify-center w-full">
+    <div className="flex flex-row justify-center w-full sm:max-xl:w-4/5 active:hover:animate-wiggle">
       <select
         className="flex w-full border-2 border-emerald-300 dark:border-emerald-950 dark:text-emerald-50 dark:bg-emerald-950 outline-none p-2 text-emerald-800 bg-emerald-50"
         onChange={(e) => {
-          const type = e.target.value;
-          const filtered = filterByType(courses, type);
-          setFilteredCourses(filtered);
+          setType(e.target.value);
         }}
       >
+        <option value="all">tipos</option>
         {options}
       </select>
     </div>
   );
 };
 
-function sortByDate(courses) {
-  return courses.sort((a, b) => {
-    return new Date(a.start) - new Date(b.start);
+const CategoryDropdown = ({ categories, setCategory }) => {
+  const options = [...new Set(categories)].map((category, index) => {
+    return (
+      <option key={index} value={category}>
+        {category}
+      </option>
+    );
   });
-}
 
-function filterByType(courses, type) {
-  return courses.filter((course) => course.type.toLowerCase() === type);
-}
+  return (
+    <div className="flex flex-row justify-center w-full sm:max-xl:w-4/5 active:hover:animate-wiggle">
+      <select
+        className="flex w-full border-2 border-emerald-300 dark:border-emerald-950 dark:text-emerald-50 dark:bg-emerald-950 outline-none p-2 text-emerald-800 bg-emerald-50"
+        onChange={(e) => {
+          setCategory(e.target.value);
+        }}
+      >
+        <option value="all">público</option>
+        {options}
+      </select>
+    </div>
+  );
+};
 
 const Timetable = ({ courses }) => {
+  const [type, setType] = useState("all");
   const [search, setSearch] = useState("");
-  const [filteredCourses, setFilteredCourses] = useState(sortByDate(courses));
+  const [category, setCategory] = useState("all");
+
+  const sortedByDate = sortByDate(courses);
+  const filteredCourses = filterByAll(sortedByDate, category, type, search);
+
+  const types = courses.map((course) => course.type.toLowerCase());
+  const categories = courses.map((course) => course.category.toLowerCase());
 
   const cards = filteredCourses.map((course, index) => {
-    const { title, speakers } = course;
-    const people = speakers.join(", ");
-    const searchValue = title + people + course.type + course.location;
-
-    if (searchValue.toLowerCase().includes(search.toLowerCase())) {
-      return <Card course={course} key={index} />;
-    }
-
-    return null;
+    return <Card course={course} key={index} />;
   });
 
   return (
     <>
       <div className="flex flex-row justify-around p-4 gap-4">
         <SearchBar setSearch={setSearch} />
-        <CoursesDropdown
-          setFilteredCourses={setFilteredCourses}
-          courses={courses}
-        />
+        <div className="flex flex-row gap-4">
+          <CoursesDropdown types={types} setType={setType} />
+          <CategoryDropdown categories={categories} setCategory={setCategory} />
+        </div>
       </div>
       <div className="grid h-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
         {cards}

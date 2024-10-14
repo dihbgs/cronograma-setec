@@ -1,6 +1,19 @@
 [
   {
     "category": "geral",
+    "type": "Palestra",
+    "title": "Química e Engenharia na Guerra",
+    "start": "2024-10-14T10:20:00",
+    "end": "2024-10-14T12:00:00",
+    "location": "Anfiteatro",
+    "speakers": [
+      "Dra. Raquel Dalla Costa da Rocha",
+      "Dr. Rodrigo Brackmann",
+      "Dr. Aruanã Antonio dos Passos"
+    ]
+  },
+  {
+    "category": "geral",
     "type": "Competição",
     "title": "Competição de Instalações Elétricas",
     "start": "2024-10-15T09:10:00",
@@ -351,7 +364,7 @@
     "speakers": ["Larissa Gass"]
   },
   {
-    "category": "mecânica, elétrica",
+    "category": "mecânica/elétrica",
     "type": "Minicurso",
     "title": "Matlab e Ansys",
     "start": "2024-10-15T08:20:00",
@@ -498,7 +511,7 @@
     "speakers": ["UTech"]
   },
   {
-    "category": "mecânica, elétrica",
+    "category": "mecânica/elétrica",
     "type": "Minicurso",
     "title": "Minicurso de Machine Learning",
     "start": "2024-10-16T08:20:00",
