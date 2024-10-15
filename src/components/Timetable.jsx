@@ -59,6 +59,10 @@ function isCourseHappeningNow(course) {
   );
 }
 
+function isOldertThanToday(course) {
+  return new Date(course.end) < new Date().setHours(0, 0, 0, 0);
+}
+
 const Card = ({ course }) => {
   const { title, type, location, speakers, start, end } = course;
   const timerange = stringToTime(start) + " - " + stringToTime(end);
@@ -170,10 +174,14 @@ const Timetable = ({ courses }) => {
   const sortedByDate = sortByDate(courses);
   const filteredCourses = filterByAll(sortedByDate, category, type, search);
 
+  const withoutOldThanToday = filteredCourses.filter((course) => {
+    return !isOldertThanToday(course);
+  });
+
   const types = courses.map((course) => course.type.toLowerCase());
   const categories = courses.map((course) => course.category.toLowerCase());
 
-  const cards = filteredCourses.map((course, index) => {
+  const cards = withoutOldThanToday.map((course, index) => {
     return <Card course={course} key={index} />;
   });
 
